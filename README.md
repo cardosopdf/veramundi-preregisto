@@ -18,7 +18,7 @@
 | `preregistos/` | Protocolo v1 e emendas 1 e 2. / Protocol v1 and amendments. |
 | `lexico/` | Léxico v1 (PT e EN) e famílias de palavras. / Lexicon v1 and word families. |
 | `fontes/` | Lista de jornais v1, lista de cobertura alargada cob-1, regra de escolha de fontes e contexto dos RSF 2026. / Source lists, selection rule and RSF context. |
-| `sinteses/` | Instruções das sínteses escritas por IA (nunca entram na medida). / Instructions for AI-written summaries (never part of the measure). |
+| `sinteses/` | Instruções das sínteses e dos resumos das histórias escritos por IA (nunca entram na medida). / Instructions for AI-written summaries and story summaries (never part of the measure). |
 | `selos/selos-diarios.csv` | Impressão digital SHA-256 de cada dia de dados, gravada depois de o dia fechar. / Daily SHA-256 fingerprint of each day of data. |
 | `verificar.mjs` | Confere as impressões digitais. / Checks the fingerprints. |
 
