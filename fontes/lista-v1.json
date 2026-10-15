@@ -1,0 +1,443 @@
+{
+  "versao": "1",
+  "selado": true,
+  "criterio": "Jornais e televisões de referência nacional; feed público de últimas notícias; títulos sem paywall; pelo menos ~10 itens visíveis no feed. Só países cujas línguas o léxico cobre (PT e EN). Lista fechada por período: alterações = nova versão + SHA; uma fonte que morre fica registada como falhada e não é substituída a meio. Jornais que recusam o recolhedor (403) entram pelo índice de notícias que o próprio jornal publica para os motores de busca (sitemap de notícias): só título e endereço do artigo, sem descrição. Itens repetidos do mesmo jornal (mesmo título com outro endereço) contam uma só vez. A lista pode excluir tipos de item que não são artigos (ex.: noticiários horários da rádio). O desporto fica fora da medida: as secções de desporto são excluídas pelo endereço onde o jornal as separa (Observador, NPR, PBS e Sky News não as separam no endereço; limitação registada). Os pedidos identificam-se como Veramundi; só as fontes marcadas com cabecalhos: \"navegador\" usam cabeçalhos de browser. Inclinação: Media Bias/Fact Check como fonte principal e AllSides como verificação, consultados a 12 out 2026; quando não há classificação externa fica registado, sem classificação inventada; 'serviço público' é um facto de propriedade. seccoes_h2: endereços das secções duras (mundo, política, justiça) e leves (cultura, estilo de vida, entretenimento) usados só na hipótese H2, fixados antes de abrir dados.",
+  "fontes": [
+    {
+      "id": "pt-rtp",
+      "nome": "RTP",
+      "pais": "PT",
+      "lingua": "pt",
+      "url": "https://www.rtp.pt/noticias/rss",
+      "estado": "verificado 2026-10-11",
+      "excluir": [
+        "/noticiario-",
+        "/noticias/andebol/",
+        "/noticias/atletismo/",
+        "/noticias/basquetebol/",
+        "/noticias/ciclismo/",
+        "/noticias/desporto/",
+        "/noticias/futebol-internacional/",
+        "/noticias/futebol-nacional/",
+        "/noticias/futsal/",
+        "/noticias/hoquei-em-patins/",
+        "/noticias/liga-conferencia/",
+        "/noticias/liga-dos-campeoes/",
+        "/noticias/liga-europa/",
+        "/noticias/modalidades/",
+        "/noticias/motores/",
+        "/noticias/tenis/",
+        "/noticias/voleibol/"
+      ],
+      "inclinacao": {
+        "tipo": "serviço público"
+      },
+      "seccoes_h2": {
+        "duras": [
+          "/noticias/mundo/",
+          "/noticias/politica/",
+          "/noticias/justica/"
+        ],
+        "leves": [
+          "/noticias/cultura/"
+        ]
+      }
+    },
+    {
+      "id": "pt-observador",
+      "nome": "Observador",
+      "pais": "PT",
+      "lingua": "pt",
+      "url": "https://observador.pt/feed/",
+      "estado": "verificado 2026-10-11",
+      "inclinacao": {
+        "mbfc": "Right-Center",
+        "mbfc_url": "https://mediabiasfactcheck.com/observador-bias-and-credibility/"
+      }
+    },
+    {
+      "id": "pt-publico",
+      "nome": "Público",
+      "pais": "PT",
+      "lingua": "pt",
+      "url": "https://feeds.feedburner.com/PublicoRSS",
+      "estado": "verificado 2026-10-11",
+      "excluir": [
+        "/desporto/"
+      ],
+      "inclinacao": {
+        "nota": "sem classificação externa (MBFC e AllSides sem página a 12 out 2026)"
+      },
+      "seccoes_h2": {
+        "duras": [
+          "/mundo/noticia/",
+          "/politica/noticia/"
+        ],
+        "leves": [
+          "/culturaipsilon/",
+          "/fugas/"
+        ]
+      }
+    },
+    {
+      "id": "pt-dn",
+      "nome": "Diário de Notícias",
+      "pais": "PT",
+      "lingua": "pt",
+      "url": "https://www.dn.pt/news_sitemap.xml",
+      "estado": "verificado 2026-10-12 (feed próprio: 403; Google Notícias: 503 a partir da Cloudflare; índice de notícias do jornal)",
+      "via": "sitemap-noticias",
+      "excluir": [
+        "/desporto/"
+      ],
+      "cabecalhos": "navegador",
+      "inclinacao": {
+        "nota": "sem classificação externa (MBFC e AllSides sem página a 12 out 2026)"
+      }
+    },
+    {
+      "id": "pt-jn",
+      "nome": "Jornal de Notícias",
+      "pais": "PT",
+      "lingua": "pt",
+      "url": "https://www.jn.pt/feed/news/sitemap.xml",
+      "estado": "verificado 2026-10-12 (feed próprio: 403; Google Notícias: 503 a partir da Cloudflare; índice de notícias do jornal)",
+      "via": "sitemap-noticias",
+      "excluir": [
+        "/desporto/",
+        "/jogos-em-direto/"
+      ],
+      "cabecalhos": "navegador",
+      "inclinacao": {
+        "nota": "sem classificação externa (MBFC e AllSides sem página a 12 out 2026)"
+      },
+      "seccoes_h2": {
+        "duras": [
+          "/mundo/artigo/",
+          "/justica/artigo/"
+        ],
+        "leves": [
+          "/cultura/artigo/",
+          "/pessoas/artigo/"
+        ]
+      }
+    },
+    {
+      "id": "pt-expresso",
+      "nome": "Expresso",
+      "pais": "PT",
+      "lingua": "pt",
+      "url": "https://expresso.pt/sitemap/news.xml",
+      "estado": "verificado 2026-10-12 (feed próprio: 403; Google Notícias: 503 a partir da Cloudflare; índice de notícias do jornal)",
+      "via": "sitemap-noticias",
+      "excluir": [
+        "/podcasts/",
+        "/desporto/"
+      ],
+      "cabecalhos": "navegador",
+      "inclinacao": {
+        "mbfc": "Least Biased",
+        "mbfc_url": "https://mediabiasfactcheck.com/expresso-portugal-bias-and-credibility/"
+      },
+      "seccoes_h2": {
+        "duras": [
+          "/internacional/",
+          "/politica/",
+          "/medio-oriente/"
+        ],
+        "leves": [
+          "/blitz/",
+          "/cultura/"
+        ]
+      }
+    },
+    {
+      "id": "br-agenciabrasil",
+      "nome": "Agência Brasil",
+      "pais": "BR",
+      "lingua": "pt",
+      "url": "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml",
+      "estado": "verificado 2026-10-11",
+      "excluir": [
+        "/esportes/"
+      ],
+      "inclinacao": {
+        "tipo": "serviço público"
+      },
+      "seccoes_h2": {
+        "duras": [
+          "/politica/",
+          "/justica/",
+          "/internacional/"
+        ],
+        "leves": [
+          "/cultura/"
+        ]
+      }
+    },
+    {
+      "id": "br-poder360",
+      "nome": "Poder360",
+      "pais": "BR",
+      "lingua": "pt",
+      "url": "https://www.poder360.com.br/feed/",
+      "estado": "verificado 2026-10-11",
+      "excluir": [
+        "/poder-sportsmkt/"
+      ],
+      "inclinacao": {
+        "nota": "sem classificação externa (MBFC e AllSides sem página a 12 out 2026)"
+      }
+    },
+    {
+      "id": "br-metropoles",
+      "nome": "Metrópoles",
+      "pais": "BR",
+      "lingua": "pt",
+      "url": "https://www.metropoles.com/feed",
+      "estado": "verificado 2026-10-11",
+      "excluir": [
+        "/esportes/"
+      ],
+      "inclinacao": {
+        "nota": "sem classificação externa (MBFC e AllSides sem página a 12 out 2026)"
+      },
+      "seccoes_h2": {
+        "duras": [
+          "/mundo/",
+          "/brasil/justica/"
+        ],
+        "leves": [
+          "/celebridades/",
+          "/entretenimento/"
+        ]
+      }
+    },
+    {
+      "id": "br-gazetadopovo",
+      "nome": "Gazeta do Povo",
+      "pais": "BR",
+      "lingua": "pt",
+      "url": "https://www.gazetadopovo.com.br/feed/rss/ultimas-noticias.xml",
+      "estado": "verificado 2026-10-11",
+      "excluir": [
+        "/esportes/"
+      ],
+      "inclinacao": {
+        "nota": "sem classificação externa (MBFC e AllSides sem página a 12 out 2026)"
+      }
+    },
+    {
+      "id": "br-folha",
+      "nome": "Folha de S.Paulo",
+      "pais": "BR",
+      "lingua": "pt",
+      "url": "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml",
+      "estado": "por verificar",
+      "excluir": [
+        "/esporte/"
+      ],
+      "inclinacao": {
+        "mbfc": "Left-Center",
+        "mbfc_url": "https://mediabiasfactcheck.com/folha-de-s-paulo-bias-and-credibility/"
+      }
+    },
+    {
+      "id": "us-npr",
+      "nome": "NPR",
+      "pais": "US",
+      "lingua": "en",
+      "url": "https://feeds.npr.org/1001/rss.xml",
+      "estado": "verificado 2026-10-11",
+      "inclinacao": {
+        "tipo": "serviço público",
+        "mbfc": "Left-Center",
+        "mbfc_url": "https://mediabiasfactcheck.com/npr/",
+        "allsides": "Lean Left",
+        "allsides_url": "https://www.allsides.com/news-source/npr-media-bias"
+      }
+    },
+    {
+      "id": "us-fox",
+      "nome": "Fox News",
+      "pais": "US",
+      "lingua": "en",
+      "url": "https://moxie.foxnews.com/google-publisher/latest.xml",
+      "estado": "verificado 2026-10-11",
+      "excluir": [
+        "/outkick-sports/",
+        "/sports/"
+      ],
+      "inclinacao": {
+        "mbfc": "Right",
+        "mbfc_url": "https://mediabiasfactcheck.com/fox-news-bias/",
+        "allsides": "Right",
+        "allsides_url": "https://www.allsides.com/blog/brand-new-allsides-media-bias-chart-ahead-2024-election-version-10"
+      },
+      "seccoes_h2": {
+        "duras": [
+          "/world/",
+          "/politics/"
+        ],
+        "leves": [
+          "/entertainment/",
+          "/lifestyle/"
+        ]
+      }
+    },
+    {
+      "id": "us-cbs",
+      "nome": "CBS News",
+      "pais": "US",
+      "lingua": "en",
+      "url": "https://www.cbsnews.com/latest/rss/main",
+      "estado": "verificado 2026-10-11",
+      "excluir": [
+        "/sports/"
+      ],
+      "inclinacao": {
+        "mbfc": "Right-Center",
+        "mbfc_url": "https://mediabiasfactcheck.com/cbs-news/",
+        "allsides": "Lean Left",
+        "allsides_url": "https://www.allsides.com/blog/brand-new-allsides-media-bias-chart-ahead-2024-election-version-10"
+      }
+    },
+    {
+      "id": "us-pbs",
+      "nome": "PBS NewsHour",
+      "pais": "US",
+      "lingua": "en",
+      "url": "https://www.pbs.org/newshour/feeds/rss/headlines",
+      "estado": "verificado 2026-10-11",
+      "inclinacao": {
+        "tipo": "serviço público",
+        "mbfc": "Left-Center",
+        "mbfc_url": "https://mediabiasfactcheck.com/pbs/",
+        "allsides": "Lean Left",
+        "allsides_url": "https://www.allsides.com/news-source/pbs-newshour"
+      }
+    },
+    {
+      "id": "us-abc",
+      "nome": "ABC News",
+      "pais": "US",
+      "lingua": "en",
+      "url": "https://abcnews.com/abcnews/topstories",
+      "estado": "verificado 2026-10-11",
+      "excluir": [
+        "/Sports/"
+      ],
+      "inclinacao": {
+        "mbfc": "Left-Center",
+        "mbfc_url": "https://mediabiasfactcheck.com/abc-news/",
+        "allsides": "Lean Left",
+        "allsides_url": "https://www.allsides.com/blog/brand-new-allsides-media-bias-chart-ahead-2024-election-version-10"
+      }
+    },
+    {
+      "id": "us-nyt",
+      "nome": "The New York Times",
+      "pais": "US",
+      "lingua": "en",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+      "estado": "por verificar",
+      "excluir": [
+        "/sports/"
+      ],
+      "inclinacao": {
+        "mbfc": "Left-Center",
+        "mbfc_url": "https://mediabiasfactcheck.com/new-york-times/",
+        "allsides": "Lean Left",
+        "allsides_url": "https://www.allsides.com/news-source/new-york-times"
+      },
+      "seccoes_h2": {
+        "duras": [
+          "/world/",
+          "/politics/"
+        ],
+        "leves": [
+          "/arts/",
+          "/style/",
+          "/dining/",
+          "/travel/"
+        ]
+      }
+    },
+    {
+      "id": "uk-sky",
+      "nome": "Sky News",
+      "pais": "UK",
+      "lingua": "en",
+      "url": "https://feeds.skynews.com/feeds/rss/home.xml",
+      "estado": "verificado 2026-10-11",
+      "inclinacao": {
+        "mbfc": "Least Biased",
+        "mbfc_url": "https://mediabiasfactcheck.com/sky-news/"
+      }
+    },
+    {
+      "id": "uk-sky-uk",
+      "nome": "Sky News (UK)",
+      "pais": "UK",
+      "lingua": "en",
+      "url": "https://feeds.skynews.com/feeds/rss/uk.xml",
+      "estado": "verificado 2026-10-11",
+      "inclinacao": {
+        "mbfc": "Least Biased",
+        "mbfc_url": "https://mediabiasfactcheck.com/sky-news/"
+      }
+    },
+    {
+      "id": "uk-bbc",
+      "nome": "BBC News",
+      "pais": "UK",
+      "lingua": "en",
+      "url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "estado": "por verificar",
+      "excluir": [
+        "/sport/"
+      ],
+      "inclinacao": {
+        "tipo": "serviço público",
+        "mbfc": "Least Biased",
+        "mbfc_url": "https://mediabiasfactcheck.com/bbc/",
+        "allsides": "Center",
+        "allsides_url": "https://www.allsides.com/blog/brand-new-allsides-media-bias-chart-ahead-2024-election-version-10"
+      }
+    },
+    {
+      "id": "uk-guardian",
+      "nome": "The Guardian",
+      "pais": "UK",
+      "lingua": "en",
+      "url": "https://www.theguardian.com/uk/rss",
+      "estado": "por verificar",
+      "excluir": [
+        "/football/",
+        "/sport/"
+      ],
+      "inclinacao": {
+        "mbfc": "Left-Center",
+        "mbfc_url": "https://mediabiasfactcheck.com/the-guardian/",
+        "allsides": "Lean Left",
+        "allsides_url": "https://www.allsides.com/news-source/guardian"
+      },
+      "seccoes_h2": {
+        "duras": [
+          "/world/",
+          "/politics/",
+          "/law/"
+        ],
+        "leves": [
+          "/lifeandstyle/",
+          "/music/",
+          "/tv-and-radio/",
+          "/books/",
+          "/culture/",
+          "/film/",
+          "/travel/"
+        ]
+      }
+    }
+  ]
+}

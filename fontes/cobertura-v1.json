@@ -1,0 +1,541 @@
+{
+ "versao": "cob-1",
+ "selado": true,
+ "nome": "cobertura-alargada",
+ "regra": "fontes/regra-cobertura-v1.md",
+ "criterio": "Lista de cobertura alargada: só manchetes (título e ligação), sem medida de tom, fora do protocolo v1 e das hipóteses H1-H4. Fontes escolhidas pela regra de escolha de fontes v1 (independência editorial pela classificação do State Media Monitor; sem meios detidos por partidos no governo; notícias gerais de alcance nacional; sem diáspora; feed público a responder a partir da Cloudflare, testado a 14 out 2026). Aprovada por Pedro Diogo Faria Figueira Cardoso a 14 out 2026.",
+ "fontes": [
+  {
+   "id": "ao-folha8",
+   "nome": "Folha 8",
+   "pais": "AO",
+   "lingua": "pt",
+   "url": "https://jornalf8.net/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "mz-opais",
+   "nome": "O País",
+   "pais": "MZ",
+   "lingua": "pt",
+   "url": "https://opais.co.mz/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "mz-carta",
+   "nome": "Carta de Moçambique",
+   "pais": "MZ",
+   "lingua": "pt",
+   "url": "https://cartamz.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "cv-anacao",
+   "nome": "A Nação",
+   "pais": "CV",
+   "lingua": "pt",
+   "url": "https://anacao.cv/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "st-telanon",
+   "nome": "Téla Nón",
+   "pais": "ST",
+   "lingua": "pt",
+   "url": "https://www.telanon.info/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "tl-diliweekly",
+   "nome": "The Dili Weekly",
+   "pais": "TL",
+   "lingua": "en",
+   "url": "https://thediliweekly.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "mo-hojemacau",
+   "nome": "Hoje Macau",
+   "pais": "MO",
+   "lingua": "pt",
+   "url": "https://hojemacau.com.mo/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "mo-pontofinal",
+   "nome": "Ponto Final",
+   "pais": "MO",
+   "lingua": "pt",
+   "url": "https://pontofinal-macau.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "ng-premiumtimes",
+   "nome": "Premium Times",
+   "pais": "NG",
+   "lingua": "en",
+   "url": "https://www.premiumtimesng.com/feed",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "ng-punch",
+   "nome": "Punch",
+   "pais": "NG",
+   "lingua": "en",
+   "url": "https://punchng.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "ng-channels",
+   "nome": "Channels TV",
+   "pais": "NG",
+   "lingua": "en",
+   "url": "https://www.channelstv.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "za-news24",
+   "nome": "News24",
+   "pais": "ZA",
+   "lingua": "en",
+   "url": "https://feeds.capi24.com/v1/Search/articles/news24/TopStories/rss",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "za-dailymaverick",
+   "nome": "Daily Maverick",
+   "pais": "ZA",
+   "lingua": "en",
+   "url": "https://www.dailymaverick.co.za/dmrss/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "za-mg",
+   "nome": "Mail & Guardian",
+   "pais": "ZA",
+   "lingua": "en",
+   "url": "https://mg.co.za/rss",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "ke-standard",
+   "nome": "The Standard",
+   "pais": "KE",
+   "lingua": "en",
+   "url": "https://www.standardmedia.co.ke/rss/headlines.php",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "ke-capitalfm",
+   "nome": "Capital FM",
+   "pais": "KE",
+   "lingua": "en",
+   "url": "https://www.capitalfm.co.ke/news/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "gh-myjoyonline",
+   "nome": "MyJoyOnline",
+   "pais": "GH",
+   "lingua": "en",
+   "url": "https://www.myjoyonline.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "ug-independent",
+   "nome": "The Independent",
+   "pais": "UG",
+   "lingua": "en",
+   "url": "https://www.independent.co.ug/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "tz-citizen",
+   "nome": "The Citizen",
+   "pais": "TZ",
+   "lingua": "en",
+   "url": "https://www.thecitizen.co.tz/rss.xml",
+   "natureza": "privado",
+   "edicao_ingles": false,
+   "cabecalhos": "navegador"
+  },
+  {
+   "id": "zw-newsday",
+   "nome": "NewsDay",
+   "pais": "ZW",
+   "lingua": "en",
+   "url": "https://www.newsday.co.zw/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "et-reporter",
+   "nome": "The Reporter",
+   "pais": "ET",
+   "lingua": "en",
+   "url": "https://www.thereporterethiopia.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "il-haaretz",
+   "nome": "Haaretz",
+   "pais": "IL",
+   "lingua": "en",
+   "url": "https://www.haaretz.com/cmlink/1.4605102",
+   "natureza": "privado",
+   "edicao_ingles": true
+  },
+  {
+   "id": "il-timesofisrael",
+   "nome": "The Times of Israel",
+   "pais": "IL",
+   "lingua": "en",
+   "url": "https://www.timesofisrael.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "il-jpost",
+   "nome": "The Jerusalem Post",
+   "pais": "IL",
+   "lingua": "en",
+   "url": "https://www.jpost.com/rss/rssfeedsfrontpage.aspx",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "eg-madamasr",
+   "nome": "Mada Masr",
+   "pais": "EG",
+   "lingua": "en",
+   "url": "https://www.madamasr.com/en/feed/",
+   "natureza": "privado",
+   "edicao_ingles": true
+  },
+  {
+   "id": "eg-egyptindependent",
+   "nome": "Egypt Independent",
+   "pais": "EG",
+   "lingua": "en",
+   "url": "https://www.egyptindependent.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": true
+  },
+  {
+   "id": "tr-bianet",
+   "nome": "Bianet",
+   "pais": "TR",
+   "lingua": "en",
+   "url": "https://bianet.org/rss/english",
+   "natureza": "privado",
+   "edicao_ingles": true
+  },
+  {
+   "id": "pk-dawn",
+   "nome": "Dawn",
+   "pais": "PK",
+   "lingua": "en",
+   "url": "https://www.dawn.com/feeds/home",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "pk-tribune",
+   "nome": "The Express Tribune",
+   "pais": "PK",
+   "lingua": "en",
+   "url": "https://tribune.com.pk/feed/home",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "pk-geo",
+   "nome": "Geo News",
+   "pais": "PK",
+   "lingua": "en",
+   "url": "https://www.geo.tv/rss/1/0",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "in-hindu",
+   "nome": "The Hindu",
+   "pais": "IN",
+   "lingua": "en",
+   "url": "https://www.thehindu.com/feeder/default.rss",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "in-indianexpress",
+   "nome": "The Indian Express",
+   "pais": "IN",
+   "lingua": "en",
+   "url": "https://indianexpress.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "in-wire",
+   "nome": "The Wire",
+   "pais": "IN",
+   "lingua": "en",
+   "url": "https://cms.thewire.in/feed",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "bd-dailystar",
+   "nome": "The Daily Star",
+   "pais": "BD",
+   "lingua": "en",
+   "url": "https://www.thedailystar.net/taxonomy/term/1/rss.xml",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "bd-dhakatribune",
+   "nome": "Dhaka Tribune",
+   "pais": "BD",
+   "lingua": "en",
+   "url": "https://www.dhakatribune.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "jp-japantimes",
+   "nome": "The Japan Times",
+   "pais": "JP",
+   "lingua": "en",
+   "url": "https://www.japantimes.co.jp/feed",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "jp-mainichi",
+   "nome": "Mainichi",
+   "pais": "JP",
+   "lingua": "en",
+   "url": "https://mainichi.jp/rss/etc/english_latest.rss",
+   "natureza": "privado",
+   "edicao_ingles": true
+  },
+  {
+   "id": "kr-yonhap",
+   "nome": "Yonhap",
+   "pais": "KR",
+   "lingua": "en",
+   "url": "https://en.yna.co.kr/RSS/news.xml",
+   "natureza": "publico-independente",
+   "edicao_ingles": true,
+   "smm": "IP"
+  },
+  {
+   "id": "kr-koreatimes",
+   "nome": "The Korea Times",
+   "pais": "KR",
+   "lingua": "en",
+   "url": "https://www.koreatimes.co.kr/www/rss/nation.xml",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "kr-hankyoreh",
+   "nome": "Hankyoreh",
+   "pais": "KR",
+   "lingua": "en",
+   "url": "https://english.hani.co.kr/rss/english_edition",
+   "natureza": "privado",
+   "edicao_ingles": true
+  },
+  {
+   "id": "hk-hkfp",
+   "nome": "Hong Kong Free Press",
+   "pais": "HK",
+   "lingua": "en",
+   "url": "https://hongkongfp.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "hk-scmp",
+   "nome": "South China Morning Post",
+   "pais": "HK",
+   "lingua": "en",
+   "url": "https://www.scmp.com/rss/91/feed",
+   "natureza": "privado",
+   "edicao_ingles": false,
+   "nota": "privado, do grupo Alibaba desde 2016 / privately owned by Alibaba Group since 2016"
+  },
+  {
+   "id": "tw-focustaiwan",
+   "nome": "Focus Taiwan",
+   "pais": "TW",
+   "lingua": "en",
+   "url": "https://feeds.feedburner.com/rsscna/engnews",
+   "natureza": "publico-independente",
+   "edicao_ingles": true,
+   "smm": "ISFM"
+  },
+  {
+   "id": "ph-rappler",
+   "nome": "Rappler",
+   "pais": "PH",
+   "lingua": "en",
+   "url": "https://www.rappler.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "ph-philstar",
+   "nome": "Philstar",
+   "pais": "PH",
+   "lingua": "en",
+   "url": "https://www.philstar.com/rss/headlines",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "my-malaysiakini",
+   "nome": "Malaysiakini",
+   "pais": "MY",
+   "lingua": "en",
+   "url": "https://www.malaysiakini.com/rss/en/news.rss",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "th-bangkokpost",
+   "nome": "Bangkok Post",
+   "pais": "TH",
+   "lingua": "en",
+   "url": "https://www.bangkokpost.com/rss/data/topstories.xml",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "th-khaosod",
+   "nome": "Khaosod English",
+   "pais": "TH",
+   "lingua": "en",
+   "url": "https://www.khaosodenglish.com/feed/",
+   "natureza": "privado",
+   "edicao_ingles": true
+  },
+  {
+   "id": "au-abc",
+   "nome": "ABC News",
+   "pais": "AU",
+   "lingua": "en",
+   "url": "https://www.abc.net.au/news/feed/51120/rss.xml",
+   "natureza": "publico-independente",
+   "edicao_ingles": false,
+   "smm": "ISF"
+  },
+  {
+   "id": "au-smh",
+   "nome": "The Sydney Morning Herald",
+   "pais": "AU",
+   "lingua": "en",
+   "url": "https://www.smh.com.au/rss/feed.xml",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "au-guardian",
+   "nome": "Guardian Australia",
+   "pais": "AU",
+   "lingua": "en",
+   "url": "https://www.theguardian.com/australia-news/rss",
+   "natureza": "privado",
+   "edicao_ingles": false
+  },
+  {
+   "id": "nz-rnz",
+   "nome": "RNZ",
+   "pais": "NZ",
+   "lingua": "en",
+   "url": "https://www.rnz.co.nz/rss/news.xml",
+   "natureza": "publico-independente",
+   "edicao_ingles": false,
+   "smm": "ISFM"
+  }
+ ],
+ "sem_fonte": [
+  {
+   "pais": "AE",
+   "razao": "sem-imprensa-independente"
+  },
+  {
+   "pais": "SA",
+   "razao": "sem-imprensa-independente"
+  },
+  {
+   "pais": "QA",
+   "razao": "sem-imprensa-independente"
+  },
+  {
+   "pais": "IR",
+   "razao": "sem-imprensa-independente"
+  },
+  {
+   "pais": "JO",
+   "razao": "sem-imprensa-independente"
+  },
+  {
+   "pais": "PS",
+   "razao": "sem-imprensa-independente"
+  },
+  {
+   "pais": "IQ",
+   "razao": "sem-imprensa-independente"
+  },
+  {
+   "pais": "CN",
+   "razao": "sem-imprensa-independente"
+  },
+  {
+   "pais": "VN",
+   "razao": "sem-imprensa-independente"
+  },
+  {
+   "pais": "SG",
+   "razao": "sem-imprensa-independente"
+  },
+  {
+   "pais": "GW",
+   "razao": "sem-feed"
+  },
+  {
+   "pais": "LB",
+   "razao": "sem-feed"
+  },
+  {
+   "pais": "ID",
+   "razao": "sem-feed"
+  },
+  {
+   "pais": "LK",
+   "razao": "sem-feed"
+  }
+ ]
+}

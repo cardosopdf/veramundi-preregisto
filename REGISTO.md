@@ -1,0 +1,43 @@
+> **Extrato público** do registo do Veramundi, gerado a partir do registo original (privado) a 15 out 2026. As entradas sobre uma lista privada de fontes, fora do protocolo v1 e sem qualquer efeito nas hipóteses H1-H4, foram retiradas (dois selos e duas linhas) ou abreviadas (uma linha); tudo o resto, incluindo datas e impressões digitais, é igual ao original.
+
+# Registo de selos
+
+Cada linha é acrescentada por `node scripts/selar.mjs`. Não se editam linhas antigas: uma correção é uma nova linha.
+
+| Data (UTC) | Ficheiro | Modo | SHA-256 | Descrição |
+|---|---|---|---|---|
+| 2026-10-12T01:36:00.071Z | `lexico/lexico-v1.json` | json-canónico | `703ab82bf1e5f9354da4a0eb05b6d4ec4b6e59a27a24b5a4e30ba115c8d4da04` | Léxico v1 (PT e EN, tensão e ânimo, só títulos), selado antes do primeiro período de análise |
+| 2026-10-12T01:50:31.857Z | `fontes/lista-v1.json` | json-canónico | `fd9c7cd7cb213d7fc79273992a595003ad60728af35eb9200aff0ce7e34427f7` | Lista de fontes v1 (21 jornais PT/BR/US/UK, sem desporto, inclinação e secções H2) |
+| 2026-10-12T01:50:48.430Z | `preregistos/protocolo-v1.md` | bytes | `ad315c7b321ed212ae90411784d1d5fdcaa82c7b5234ddfce76d1d6db972f7c9` | Protocolo de pré-registo v1: H1-H4, período 12 out-7 dez 2026 |
+| 2026-10-12T02:01:24.885Z | `analise/analise-v1.mjs` | bytes | `d677c4cd0e35a664270204133b39d467734cacc6efd88c3b82f9c0aec2fd12a9` | Código de análise v1 (H1-H4, robustez), selado antes de abrir os dados |
+| 2026-10-12T02:01:24.934Z | `analise/eventos-h3.mjs` | bytes | `2564d3636fd9d50b286aaf5108206597f575c857db5dd5d413ba7461a4fda5e2` | Regra dos acontecimentos da H3 (USGS + Wikipedia Current events), selada antes de abrir os dados |
+| 2026-10-12T09:44:10.646Z | `sinteses/instrucoes-v1.md` | bytes | `124667f1b981e4d7d9cf43a59efcae5e734ebba7d7f9956994079a0d193efefa` | Instruções das sínteses do Claude v1 (fonte por frase, sem tom, PT e EN) |
+| 2026-10-12T10:16:33.489Z | `lexico/familias-v1.json` | json-canónico | `b0e4a87caac0993905fe27006244241d647108c8eed1d79358dede0e27340530` | Famílias do léxico v1 (defesa, economia, política, outra), aprovadas a 12 out. Medida adicional fora do protocolo v1: não entra na H1-H4. Repartição só pública depois de 7 dez |
+| 2026-10-12T10:20:47.022Z | `preregistos/emenda-v1-01.md` | bytes | `0dc6d42935bda0c07e58cb51dee56275163c5074596b998fa80230a4b3aed272` | Emenda 1 ao protocolo v1, antes de abrir os dados: na H1 uk-sky e uk-sky-uk contam como um só jornal (o mesmo jornal inflacionava a correlação dentro do Reino Unido) |
+| 2026-10-12T10:20:47.082Z | `analise/analise-v1-emenda1.mjs` | bytes | `d8b08713af95245febc5129af3d9edec23bb3835e8cc6280065035607862a853` | Código de análise com a emenda 1 (H1 com a Sky fundida; resto igual ao v1), selado antes de abrir os dados |
+| 2026-10-12T11:44:09.837Z | `preregistos/emenda-v1-02.md` | bytes | `b87c522e2beb2388f3fb64f7cc80695b8050831237232d24e569b6f40ba059df` | Emenda 2 ao protocolo v1, antes de abrir os dados: a Sky News (uk-sky + uk-sky-uk) conta como um só jornal em toda a análise (H1-H4) |
+| 2026-10-12T11:44:09.899Z | `analise/analise-v1-emenda2.mjs` | bytes | `566dd61c9b5255dd6f3d495e2462ac123079d00aa9457a17952cd4008efc3b85` | Código de análise com a emenda 2 (Sky fundida em toda a análise), selado antes de abrir os dados |
+| 2026-10-14T12:55:25.802Z | `fontes/regra-cobertura-v1.md` | bytes | `82afa82a7205c07c7dc2906e02586a28e6cfa119d68cdc79ca335addf91e2239` | Regra de escolha de fontes da cobertura alargada v1 (independência editorial pelo State Media Monitor, sem imprensa estatal capturada), aprovada a 14 out. Fora do protocolo v1 |
+| 2026-10-14T12:55:25.895Z | `fontes/cobertura-v1.json` | json-canónico | `2311aae23b19ade1cc663dd93b3fec801819f0ed5ae12b57504f972dd1d03a25` | Lista de cobertura alargada cob-1 (52 fontes em 29 países, só manchetes, sem tom), aprovada a 14 out. Fora do protocolo v1 |
+| 2026-10-14T12:55:25.964Z | `fontes/contexto-rsf-2026.json` | json-canónico | `787b6a41d0cbd84535444f0f753e84987b9fcd51f24699188d827d1fe3a938be` | Contexto: Classificação Mundial da Liberdade de Imprensa 2026 dos RSF (posição e pontuação por país), só para mostrar no site; não entra em nenhum número |
+
+## Correções técnicas durante o período
+
+Alterações ao código que não mudam o que é medido (protocolo v1, secção 2). Uma linha por correção, com data (UTC).
+
+- 2026-10-12: as manchetes individuais passam a entrar nos selos diários (fonte de selo `manchetes`), além das somas `rss` e `rss-por-jornal`. Não muda a recolha nem a medida.
+
+- 2026-10-12: trava contra disparos duplicados do cron (migração 0010, `cron_trava`). Entre as 13:47 e as 15:07 UTC de 12 out a Cloudflare disparou várias vezes o mesmo cron duas vezes no mesmo minuto (13 execuções RSS duplicadas, às 13:47-14:37, 15:02 e 15:07; a Wikipedia também). As duas execuções contaram os mesmos itens novos nas somas por hora (`sinal` fonte `rss`, `sinal_fonte` e `sinal_familia`) das horas 13, 14 e 15 UTC de 12 out, que ficam inflacionadas nessas execuções. A tabela `manchetes`, usada pela análise da H1-H4, não foi afetada (cada manchete entra uma só vez pela chave). Não muda o que é medido. As somas destas horas não são corrigidas à mão; a decisão sobre elas fica registada antes de abrir os dados.
+
+- 2026-10-13: selo `wikipedia` de 2026-10-09. Foi gravado a 2026-10-11T18:01:19Z, no arranque do motor, com as 27 linhas que havia; a recolha da Wikipedia recupera até 48 horas para trás e acrescentou depois 117 horas desse dia. O selo não é alterado: confere-se só com as linhas gravadas até à hora do selo (`recolhido_em <= '2026-10-11T18:01:19.483Z'`), que dão o mesmo SHA-256 `3d5e239c…` (verificado a 13 out). Daqui em diante a recolha nunca acrescenta horas a um dia já selado. Os outros selos (10 e 11 out) conferem com as linhas atuais.
+- 2026-10-13: gravação numa só transação. Em cada execução (RSS e uma lista privada fora do protocolo), as chaves dos itens contados, as somas, as manchetes e o estado das fontes passam a ir numa única transação da D1; as chaves dos itens que não contam (semente e títulos repetidos) vão antes. Antes, uma falha entre blocos podia deixar um item marcado como visto sem ser somado. Desde o início do período não houve nenhuma execução falhada, por isso nenhum dado foi afetado. Não muda o que é medido.
+- 2026-10-13: tempo máximo por pedido (15 s para jornais, Wikipedia e Google; 90 s para as sínteses), e a hora e a fatia de fontes de cada execução passam a vir da hora marcada do disparo, não da hora a que o código corre (dá a mesma fatia; evita saltar ou repetir uma quando uma execução atrasa). Não muda o que é medido.
+- 2026-10-13: só se guardam ligações `http` ou `https`; um endereço de outro tipo (por exemplo `javascript:`) fica vazio e a manchete conta na mesma. Até hoje todas as ligações guardadas eram http(s). Não muda o que é medido.
+- 2026-10-13: os selos diários escolhem as linhas de cada dia por intervalo de hora (`janela >= início AND janela < fim`) em vez de `date(janela)`; são exatamente as mesmas linhas. A resolução de endereços do Google Notícias (inativa: nenhuma fonte usa essa via) só toca em manchetes das últimas 24 horas, que ainda não estão seladas.
+
+## Medidas adicionais fora do protocolo v1
+
+Medidas guardadas durante o período que não entram nas hipóteses H1-H4 nem na sua análise. Não são correções técnicas.
+
+- 2026-10-12: repartição da tensão por família (defesa, economia, política, outra), a partir de `lexico/familias-v1.json` (selado acima, SHA-256 `b0e4a87c…`). O motor guarda as somas por família × região × hora, com o SHA do léxico e o do ficheiro de famílias (tabela `sinal_familia`, selada por dia como `rss-familias`). Só é pública depois de 7 dez 2026. No site aparece apenas com pelo menos 40 manchetes nas últimas 24 horas, das quais pelo menos 15 com tensão; uma família só aparece com nome se tiver pelo menos 3 manchetes, senão conta como "outra".
+- 2026-10-14: lista de cobertura alargada (`fontes/cobertura-v1.json`, cob-1: 52 fontes em 29 países, selada acima com a regra `fontes/regra-cobertura-v1.md`). Só manchetes, título e ligação: **não mede tom** e não toca na lista v1, no sinal nem nas manchetes da H1-H4 (tabelas próprias `cob_*`, deduplicação própria). Selada por dia como `cob-manchetes`. Os países sem fonte que cumpra a regra ficam listados no próprio ficheiro, com a razão. Duas fontes testadas e aprovadas na proposta ficaram de fora antes do selo, por aplicação estrita da regra: Correio da Kianda (Angola, propriedade não confirmada) e Free Malaysia Today (Malásia, propriedade pouco clara, possivelmente de um grupo ligado a um partido). O contexto dos RSF 2026 (`fontes/contexto-rsf-2026.json`) só se mostra no site e não entra em nenhum número.
