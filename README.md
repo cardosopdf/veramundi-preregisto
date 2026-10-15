@@ -1,5 +1,9 @@
 # Veramundi · pré-registo público / public pre-registration
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23393215.svg)](https://doi.org/10.5281/zenodo.23393215)
+
+**DOI (todas as versões / all versions):** [10.5281/zenodo.23393215](https://doi.org/10.5281/zenodo.23393215) · primeira versão arquivada / first archived version: v1.0.3, [10.5281/zenodo.23393216](https://doi.org/10.5281/zenodo.23393216)
+
 **PT** · Este repositório guarda, com data pública, o método do [Veramundi](https://veramundi.com) **antes** de se verem os resultados: o protocolo de análise e as emendas, o léxico de tom, as listas de fontes, as regras e o registo de impressões digitais SHA-256. Cada versão é arquivada no Zenodo com um DOI, o que dá uma data independente que ninguém pode alterar.
 
 **EN** · This repository holds, with a public date, the method of [Veramundi](https://veramundi.com) **before** any results are seen: the analysis protocol and its amendments, the tone lexicon, the source lists, the rules and the register of SHA-256 fingerprints. Each version is archived on Zenodo with a DOI, giving an independent date that no one can change.
